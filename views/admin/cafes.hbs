@@ -1,0 +1,20 @@
+<link rel='stylesheet' href='/stylesheets/style.css' />
+
+<a href="/admin/cafes-add" class="btn btn-primary">Add/Edit Cafe</a>
+<a href="/admin/cafes-delete" class="btn btn-primary" >Delete Cafe</a>
+<table class="table table-bordered">    
+    <thead>
+        <th>Name</td>
+        <th>Adress</td>
+        <th>Contacts</td>    
+    </thead>
+    <tbody>
+{{#each cafes}}
+<tr>    
+    <td> <div id="tableOfAdd">{{Name}} </div>  </td> 
+    <td> <div id="tableOfAdd">{{Adress}} </div> </td>
+    <td> <div id="tableOfAdd">{{Contacts}} </div> </td>
+</tr>
+{{/each}}
+</tbody>
+</table>
