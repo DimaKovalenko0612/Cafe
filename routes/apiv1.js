@@ -13,11 +13,3 @@ var countryController = require('../controllers/countryController.js');
 //     });
 // });
 
-router.get('/cafes', countryController.all);
-
-router.route('/cafe/:cafeId')
-    .get(countryController.read)
-    .put(countryController.update)
-    .delete(countryController.delete);
-
-module.exports = router;

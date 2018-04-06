@@ -1,8 +1,11 @@
-<div class="jumbotron">
-    <div>
-        <img src="http://lorempixel.com/output/food-q-c-1200-500-10.jpg" alt="avatar" class="img-responsive"> 
-        <div>Cafes</div>
+{{title}}
 
-   
-    </div>
-</div></div>
+{{#each cafes}}
+<div class="media">  
+  <div class="media-body">
+   <h4 class="media-heading">{{Name}}</h4> 
+   <p>{{Adress}}</p>
+   <p>{{Contacts}}</p>
+  </div>
+</div>
+{{/each}}

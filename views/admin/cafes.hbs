@@ -1,12 +1,14 @@
 <link rel='stylesheet' href='/stylesheets/style.css' />
 
-<a href="/admin/cafes-add" class="btn btn-primary">Add/Edit Cafe</a>
-<a href="/admin/cafes-delete" class="btn btn-primary" >Delete Cafe</a>
-<table class="table table-bordered">    
+<a href="/admin/Cafes-add" class="btn btn-primary">Add Cafe</a>
+<table class="table table-bordered">   
+    <colgroup>
+    </colgroup>  
     <thead>
         <th>Name</td>
         <th>Adress</td>
-        <th>Contacts</td>    
+        <th>Contacts</td>
+        <th>Settings</th>    
     </thead>
     <tbody>
 {{#each cafes}}
@@ -14,6 +16,7 @@
     <td> <div id="tableOfAdd">{{Name}} </div>  </td> 
     <td> <div id="tableOfAdd">{{Adress}} </div> </td>
     <td> <div id="tableOfAdd">{{Contacts}} </div> </td>
+    <td> <div id="tableOfAdd"><a href="/admin/cafes-edit/{{_id}}" class="btn btn-primary">Edit Cafe</a> | <a href="/admin/cafes-delete/{{_id}}" class="btn btn-primary" >Delete Cafe</a></div></td>    
 </tr>
 {{/each}}
 </tbody>

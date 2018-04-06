@@ -1,29 +1,32 @@
 <div class="row">
 <form method="POST" class="form-horizontal" role="form">
         <div class="form-group">
-            <legend>Add Cafe</legend>
+            <legend>Edit Cafe</legend>
         </div>        
-        <div class="form-group">
+         <div class="form-group">
             <label for="CafeName" class="control-label col-md-2">Cafe:</label>
             <div class="col-md-6">
-                <input type="text" name="CafeName" id="CafeName" class="form-control" required>
+                <input type="text" name="CafeName" id="CafeName" class="form-control" 
+               value="{{cafes.Name}}" >
+                
             </div>
         </div>    
          <div class="form-group">
             <label for="CafeAdress" class="control-label col-md-2">Adress:</label>
             <div class="col-md-6">
-                <input type="text" name="CafeAdress" id="CafeAdress" class="form-control" required>
+                <input type="text" name="CafeAdress" id="CafeAdress" class="form-control" value="{{Cafes.Adress}}" >
             </div>
         </div>      
          <div class="form-group">
             <label for="CafeContacts" class="control-label col-md-2">Contacts:</label>
             <div class="col-md-6">
-                <input type="text" name="CafeContacts" id="CafeContacts" class="form-control" required>
+                <input type="text" name="CafeContacts" id="CafeContacts" class="form-control" 
+                value="{{cafes.Contacts}}" >
             </div>
         </div> 
         <div class="form-group">
             <div class="col-sm-10 col-sm-offset-2">
-                <button type="submit" class="btn btn-primary">Add Cafe</button>
+                <button type="submit" class="btn btn-primary">Edit Cafe</button>
             </div>
         </div>
 </form>

@@ -1,5 +1,5 @@
 $().ready(function() {
-    $.getJSON("api/v1/cafe", function(data) {
+    $.getJSON("api/v1/cafes", function(data) {
         var str = '';
         $.each(data, function(key, val) {
             str += `<div class="media">  
